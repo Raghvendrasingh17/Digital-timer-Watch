@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(194, 194, 194);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.single {
+    margin: 10px;
+    box-shadow: 1px 1px 6px gray;
+}
+
+.single span {
+    width: 100px;
+    background-color: rgb(162, 218, 236);
+    opacity: 0.8;
+    padding: 20px;
+    text-align: center;
+    font-size: 48px;
+}
+.single .common {
+    font-size: 14px;
+    letter-spacing: 2px;
+    background-color: rgb(85, 184, 218);
+    height: 1px;
+    padding-top: 10px;
+    width: 100px;
+}
+#ampm{
+    width: 50%;
+}
+#greeting{
+    background: rgba(71, 176, 207, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    
+    width: max-content;
+    padding: 10px 30px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+    text-shadow: 1px 1px 10px gray;
+    border: 1px solid white;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .single span {
+        width: 60px;
+        padding: 8px;
+        font-size: 34px;
+    }
+
+    .single .common {
+        font-size: 12px;
+        padding-top: 4px;
+        width: 60px;
+        height: 10px;
+    }
+}

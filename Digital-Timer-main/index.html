@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <meta name="author" content="Raghvendra Singh">
+    <meta name="description" content="A simple and responsive digital timer that displays the current time with dynamic background changes and personalized greetings.">
+
+    <link rel="shortcut icon" href="assets/time-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="clock">
+        <div class="single">
+            <span id="hour">00</span>
+            <span class="common">Hours</span>
+        </div>
+
+        <div class="single">
+            <span id="minute">00</span>
+            <span class="common">Minutes</span>
+        </div>
+
+        <div class="single">
+            <span id="seconds">00</span>
+            <span class="common">Seconds</span>
+        </div>
+
+        <div class="single">
+            <span id="ampm" class="common">AM</span>
+        </div>
+    </div>
+
+    <!-- Greeting Section - wishes the user based on their current browser time  -->
+    <h2 id="greeting">Good Morning</h2> 
+
+
+    <script src="script.js"></script>
+</body>
+</html>
